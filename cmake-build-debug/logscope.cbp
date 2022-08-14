@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="logscope"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="logscope">
+				<Option output="/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/logscope" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 logscope"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="logscope/fast">
+				<Option output="/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/logscope" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 logscope/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/khavelun/Desktop/development/logscope/backend/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/contract.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/contract.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/examples/example1/example1.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/examples/example2/example2.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/examples/example3/example3.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/examples/example4/example4.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/examples/example5/example5.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/examples/example6/example6.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/examples/example7/example7.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/main.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/ast/ast.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/ast/ast.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/csv/csvparser.c">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/csv/csvparser.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/Binding.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/Binding.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/EndError.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/EndError.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/ErrorReport.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/ErrorReport.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/Event.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/Event.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/MonitorError.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/MonitorError.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/MonitorObject.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/MonitorObject.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/NextError.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/NextError.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/Option.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/Options.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/SpecObject.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/SpecObject.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/StateObject.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/StateObject.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/TransitionError.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/engine/TransitionError.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/util/util.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/src/util/util.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite1/contract.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite1/contract.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite1/test1.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite2/contract.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite2/contract.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite2/test2.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite3/contract.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite3/contract.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite3/test3.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite4/contract.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite4/contract.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite4/test4.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite5/contract.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite5/contract.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite5/test5.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite6/contract.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite6/contract.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite6/test6.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite7/contract.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite7/contract.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite7/test7.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite8/contract.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite8/contract.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/test/suite8/test8.h">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/testall.cpp">
+			<Option target="logscope"/>
+		</Unit>
+		<Unit filename="/Users/khavelun/Desktop/development/logscope/backend/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

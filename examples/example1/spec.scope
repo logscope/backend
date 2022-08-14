@@ -1,0 +1,17 @@
+
+/*
+After submission of a command, a success of the command must follow, and no other command can be submitted in between.
+*/
+
+monitor M1 {
+  event command, succeed
+
+  init Command {
+    command => Succeed
+  }
+
+  hot Succeed {
+    succeed => Command
+    command => error
+  }
+}

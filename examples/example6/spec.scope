@@ -1,0 +1,23 @@
+
+/*
+After submission of a flight software command with a name $x$,
+a success of the command named $x$ must follow (with the same name),
+and that command $x$ cannot be re-submitted in between.
+Furthermore, a command is only allowed to succeed
+if it has been commanded in the past and not yet succeeded.
+*/
+
+monitor M3 {
+  event command(cmd,kind), succeed(cmd)
+
+  always {
+    command(cmd : x, kind : "FSW") => Succeed(c : x)
+    succeed(cmd : x) @ !Succeed(c : x) => error
+  }
+
+  hot Succeed(c) {
+    succeed(cmd : c) => ok
+    command(cmd : c) => error
+  }
+}
+

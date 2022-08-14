@@ -1,0 +1,80 @@
+
+#include "src/ast/ast.h"
+#include "src/engine/Event.h"
+#include "src/engine/SpecObject.h"
+
+using namespace  std;
+
+ast::Monitor *monitorInitBeforeExit() {
+    ast::Monitor *InitBeforeExit = new ast::Monitor("InitBeforeExit");
+
+    ast::State *INTERNAL_1 = new ast::State(
+            {ast::Modifier::init, ast::Modifier::always},
+            "INTERNAL_always_1",
+            {},
+            {
+                    new ast::Transition(new ast::Pattern(true, "init", {new ast::Constraint("task", new ast::Range(ast::Range::Kind::NAME, "s"))}),
+                                        {},
+                                        {
+                                                new ast::Pattern(true, "Initiated", {new ast::Constraint("taskNumber", new ast::Range(ast::Range::Kind::NAME, "s"))})
+                                        })
+            }
+    );
+
+    ast::State *INTERNAL_2 = new ast::State(
+            {ast::Modifier::init, ast::Modifier::always},
+            "INTERNAL_always_2",
+            {},
+            {
+                    new ast::Transition(new ast::Pattern(true, "init", {new ast::Constraint("task", new ast::Range(ast::Range::Kind::NAME, "s"))}),
+                                        {
+                                                new ast::Pattern(true, "Initiated", {new ast::Constraint("taskNumber", new ast::Range(ast::Range::Kind::NAME, "s"))})
+                                        },{
+                                                new ast::Pattern(true, "error", {})
+                                        })
+            }
+    );
+
+    ast::State *Initiated = new ast::State(
+            {ast::Modifier::hot},
+            "Initiated",
+            {"taskNumber"},
+            {
+                    new ast::Transition(new ast::Pattern(true, "exit", {new ast::Constraint("task", new ast::Range(ast::Range::Kind::NAME, "taskNumber"))}),
+                                        {},
+                                        {
+                                                new ast::Pattern(true, "ok", {})
+                                        })
+            }
+    );
+    InitBeforeExit->addState(INTERNAL_1);
+    InitBeforeExit->addState(INTERNAL_2);
+    InitBeforeExit->addState(Initiated);
+    return InitBeforeExit;
+}
+
+int main () {
+    // Create spec:
+
+    ast::Spec *spec = new ast::Spec();
+    spec->addMonitor(monitorInitBeforeExit());
+    // spec.addMonitor(monitorInitBeforeExit());
+
+    // Create log:
+
+    list<Event> events = {
+            Event(10,"init", {{"task","1"}}),
+            Event(10,"init", {{"task","2"}}),
+            Event(10,"init", {{"task","2"}}),
+            Event(10,"exit", {{"task","1"}})
+    };
+
+    // Analyze log:
+
+    SpecObject contract(spec);
+    for (Event &e : events) {
+        contract.eval(e);
+    };
+    contract.end();
+}
+
